@@ -1,9 +1,9 @@
 # Credit-Card-Fraud-Detection-using-Autoencoders-in-Keras
 
-#Overview
+# Overview
 This project explores the implementation of a Deep Autoencoder, built with Keras, to identify fraudulent credit card transactions. The model is trained exclusively on normal (non-fraudulent) transactions, learning to reconstruct their patterns. Transactions with high reconstruction errors are flagged as potential fraud.
 
-#Features
+# Features
 •	Comprehensive preprocessing of credit card transaction data.
 
 •	Visualization of data distributions to gain insights.
@@ -14,7 +14,7 @@ This project explores the implementation of a Deep Autoencoder, built with Keras
 
 •	Graphical analysis of results, including confusion matrices, ROC curves, and reconstruction errors.
 
-#Requirements
+# Requirements
 To run this project, you will need the following Python libraries:
 
 •	pandas
@@ -33,17 +33,17 @@ To run this project, you will need the following Python libraries:
 
 •	scipy
 
-#Dataset
+# Dataset
 The dataset utilized is a credit card transaction dataset available in Data folder in main branch.
 
-#Dataset Columns
+# Dataset Columns
 •	Time: Time elapsed since the first transaction.
 
 •	Amount: The transaction amount.
 
 •	Class: Labels denoting normal (0) or fraudulent (1) transactions.
 
-#Workflow
+# Workflow
 1.	Import Libraries
     o	Import necessary libraries and set visualization preferences.
 2.	Load and Explore Dataset
@@ -66,14 +66,14 @@ The dataset utilized is a credit card transaction dataset available in Data fold
     o	Identify fraudulent transactions by analyzing reconstruction errors.
     o	Plot the ROC curve, Precision-Recall curve, and reconstruction error distributions.
     o	Calculate the confusion matrix and derive performance metrics.
-#Results
+# Results
 •	Model Performance: The Autoencoder effectively identified fraudulent transactions by detecting anomalies in reconstruction patterns.
 •	Visual Outputs:
     o	Distribution of transaction classes.
     o	Reconstruction error distributions.
     o	ROC curve and Precision-Recall curve.
     o	Confusion matrix.
-#Key Files
+# Key Files
 •	Model Checkpoints: model.keras
 •	Generated Visualizations:
     o	transaction_class_distribution.png
@@ -82,15 +82,15 @@ The dataset utilized is a credit card transaction dataset available in Data fold
     o	ROC_Curve.png
     o	Precision_vs_Recall.png
     o	Confusion_Matrix.png
-#Conclusion
+# Conclusion
 This project demonstrates the feasibility of detecting fraudulent transactions by leveraging Autoencoders to model patterns in normal transactions. While this implementation is a foundational demonstration, further tuning and advanced methods can improve its accuracy and applicability.
-#Acknowledgments
+# Acknowledgments
 The project draws inspiration from the principles of anomaly detection using Autoencoders. Special thanks to the dataset providers for making this exploration possible.
-#How to Run
+# How to Run
 1.	Clone this repository.
 2.	Install the necessary Python libraries.
 3.	Update the dataset file path in the script.
 4.	Execute the script to train the model and generate results.
-#License
+# License
 This project is licensed under the MIT License.
 
